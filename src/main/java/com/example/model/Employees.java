@@ -16,12 +16,4 @@ public class Employees {
     private List<Employee> content;
     
     private Integer count;
-
-    public void setContent(List<Employee> content) {
-        this.content = content;
-    }
-
-    public List<Employee> getContent() {
-        return content;
-    }
 }

@@ -14,53 +14,19 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "employees")
 public class Employee {
-    private long id;
-    private String firstName;
-    private String lastName;
-    private String emailId;
-
-    public Employee(String firstName, String lastName, String emailId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailId = emailId;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
+    private long id;
 
     @Column(name = "first_name", nullable = false)
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    private String firstName;
 
     @Column(name = "last_name")
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+    private String lastName;
 
     @Column(name = "email_address")
-    public String getEmailId() {
-        return emailId;
-    }
-
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
-    }
+    private String emailId;
 
     @Override
     public String toString() {
