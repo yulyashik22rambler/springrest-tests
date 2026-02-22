@@ -32,7 +32,6 @@ import io.qameta.allure.Epic;
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Epic("GET /employee")
 public class GetEmployeeTest {
-
     @Autowired
     EmployeeApi employeeApi;
 
